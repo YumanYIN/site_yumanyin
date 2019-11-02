@@ -1,0 +1,13 @@
+.info-email:after {
+
+    content: attr(data-name) "@" attr(data-domain) "." attr(data-tld);
+}
+
+.info-phone:after {
+
+    content: attr(data-country) " " attr(data-partone) " " attr(data-parttwo) " " attr(data-partthree) " " attr(data-partfour);
+}
+
+.info-address:after {
+    content: attr(data-rue) " " attr(data-ville) ", " attr(data-codepostale) ", " attr(data-pays);
+}

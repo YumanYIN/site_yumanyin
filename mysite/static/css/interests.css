@@ -1,0 +1,24 @@
+.card-interest {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.card-interest .desc {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    right: 0;
+    background: rgba(7, 61, 160, 0.9);
+    opacity: 0;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s
+}
+
+.card-interest .desc .con {
+    padding: 30px;
+    display: block;
+    position: relative;
+}

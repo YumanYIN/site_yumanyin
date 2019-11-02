@@ -1,0 +1,89 @@
+﻿<!-- extends表明此页面继承自 base.html 文件 -->
+{% extends "mysite/base.html" %}
+{% load staticfiles %}
+
+{% block mainmenu %}
+    <li><a href="/index/">Home</a></li>
+    <li ><a href="/resume/">Resume</a></li>
+    <li class="lonon-active"><a href="/projects/">Projects</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/contact/">Contact</a></li>
+{% endblock %}
+
+{% block content %}
+        
+        <!-- Main Section -->
+        <div id="lonon-main">
+            <!-- Services -->
+            <div class="lonon-services">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12"> <span class="heading-meta style-1">What I Do</span>
+                            <h2 class="lonon-heading animate-box" data-animate-effect="fadeInLeft">Projects</h2> </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="lonon-feature animate-box" data-animate-effect="fadeInLeft" style="height: 320px">
+                                <div class="lonon-icon"> <span class="et-strategy font-35px"></span> </div>
+                                <div class="lonon-text">
+                                    <h3>My Website</h3>
+                                    <p>I started to create my own website in 2019 during my studies to show my resume and projects.</p>
+                                    <div class="divider1"></div>
+                                    <br/>
+                                    <p style="color: #005cbf">Django(Python), HTML5, CSS3, JavaScript, SQLite3</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="lonon-feature animate-box" data-animate-effect="fadeInLeft" style="height: 320px">
+                                <div class="lonon-icon"> <span class="et-lightbulb font-35px"></span> </div>
+                                <div class="lonon-text">
+                                    <h3>Web Applicationn</h3>
+                                    <p>In the summer internship , I made a Web Application which can manager the client informations , including creating and modifying documents , and producing formatted PDF.</p>
+                                    <div class="divider1"></div>
+                                    <br/>
+                                    <p style="color: #005cbf">Django(Python), HTML5, CSS3, JavaScript, SQLite3</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第二行 -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="lonon-feature animate-box" data-animate-effect="fadeInLeft" style="height: 320px">
+                                <div class="lonon-icon"> <span class="et-tools font-35px"></span> </div>
+                                <div class="lonon-text">
+                                    <h3>Java Application</h3>
+                                    <p>I have created a Java application that can record consumption and generate consumption reports. This is a self-learning project to practice Java and MySQL and it can be seen in my Github.</p>
+                                    <div class="divider1"></div>
+                                    <br/>
+                                    <p style="color: #005cbf">Java, MySQL</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="lonon-feature animate-box" data-animate-effect="fadeInLeft" style="height: 320px">
+                                <div class="lonon-icon"> <span class="et-target font-35px"></span> </div>
+                                <div class="lonon-text">
+                                    <h3>Python Project</h3>
+                                    <p>I am working on a school Python project whose name is Representation of videos by sequence of graphs. The goal of the project is to track the position of people in the video sequence by reading the video sequence and related positioning information.</p>
+                                    <div class="divider1"></div>
+                                    <br/>
+                                    <p style="color: #005cbf">Python, Numpy, NetworkX</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divider1"></div>
+
+            {% block content-footer %}{% endblock %}
+        </div>
+
+{% endblock %}
+
+{% block script %}
+
+
+{% endblock script %}

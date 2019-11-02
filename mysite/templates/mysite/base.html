@@ -1,0 +1,82 @@
+
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Yuman YIN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}" />
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/et-lineicons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/info.css' %}">
+    <!-- FOR IE9 below -->
+    <!-- [if lt IE 9]>
+    <script src="{% static 'js/respond.min.js' %}"></script>
+    <![endif]-->
+</head>
+<body>
+
+    <div id="lonon-page"> <a href="#" class="js-lonon-nav-toggle lonon-nav-toggle"><i></i></a>
+        <!-- Sidebar Section -->
+        <aside id="lonon-aside">
+            <!-- Logo -->
+            <h1 id="lonon-logo">
+                <img src="{% static 'images/profile1.jpg' %}" alt=""><br />
+                <a href="index.html">Yuman YIN<span>Computer Science</span></a>
+            </h1>
+            <!-- Menu -->
+            <nav id="lonon-main-menu" class="nav-item">
+                <ul>
+                    {% block mainmenu %}{% endblock %}
+
+                </ul>
+            </nav>
+            <!-- Sidebar Footer -->
+            <div class="lonon-footer">
+                <ul>
+                    <li><a href="mailto:yinyuman96@gmail.com"><i class="ti-email font-14px gray-icon"></i></a></li>
+                    <li><a href="https://github.com/YumanYIN/" target=“_blank”><i class="ti-github font-14px gray-icon"></i> </a></li>
+                    <li><a href="https://www.linkedin.com/in/yuman-yin-568575182/" target=“_blank”><i class="ti-linkedin font-14px gray-icon"></i></a></li>
+                    <li><a href="https://www.facebook.com/yuman.yin.3" target=“_blank”><i class="ti-facebook font-14px gray-icon"></i></a></li>
+                    <li><a href="https://twitter.com/yin_yuman" target=“_blank”><i class="ti-twitter-alt font-14px gray-icon"></i></a></li>
+                    <li><a href="https://www.instagram.com/yinyuman96/" target=“_blank”><i class="ti-instagram font-14px gray-icon"></i></a></li>
+                </ul>
+                <br/>
+                <p><small>&copy; 2019 <a href="http://www.yinyuman.com/" title="yinyuman">Yuman YIN</a>. All right reserved</small></p>
+            </div>
+        </aside>
+
+        <!-- Main Section -->
+        {% block content %}
+        {% endblock %}
+
+
+
+
+    </div>
+
+<!-- JS -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/modernizr-2.6.2.min.js' %}"></script>
+    <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'js/sticky-kit.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+
+    <!-- 每个页面单独的script在这里引入 -->
+    {% block script %}{% endblock script %}
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,408 @@
+<!-- extends表明此页面继承自 base.html 文件 -->
+{% extends "mysite/base.html" %}
+{% load staticfiles %}
+
+{% block mainmenu %}
+    <li><a href="/index/">Home</a></li>
+    <li class="lonon-active"><a href="/resume/">Resume</a></li>
+    <li><a href="/projects/">Projects</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/contact/">Contact</a></li>
+{% endblock %}
+
+{% block content %}
+        <!-- Main Section -->
+        <div id="lonon-main">
+            <!-- About Me -->
+            <div class="lonon-about">
+                <div class="container-fluid">
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="{% static 'images/resume1.jpg' %}" class="img-fluid mb-15 animate-box fadeInLeft animated">
+                        </div>
+                        <div class="col-md-8 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+                            <span class="heading-meta style-1">Resume</span>
+                            <h3 class="lonon-about-heading">Informations</h3>
+
+                                    <p>I’m currently a 4th-year student major in Computer Science who is studying for a Master Degree in Information Technology Engineering.</p>
+                                    <p>I'm searching a 3 months summer internship for 2020 in a dynamic, creative and professional company. </p>
+                                    <p>I will provide my creativity to the company while conducting more professional study of website development.</p>
+
+
+                            <div class="lonon-about-contact-wrap">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p><b>Degree:</b> Master in CS</p>
+                                        <p><b>Website:</b> www.yinyuman.com</p>
+                                        <p class="info-phone" data-country=" +33(0)" data-partone="6 67" data-parttwo="32" data-partthree="43" data-partfour="41"><b>Phone:</b></p>
+                                        <p class="info-email" data-name=" yinyuman96" data-domain="gmail" data-tld="com"><b>Email: </b></p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><b>Birthday:</b> 28 August 1996</p>
+                                        <p class="info-address" data-ville="Tours" data-codepostale="37200" data-pays="France"><b>Address:</b></p>
+                                        <p><b>Github:</b> </p>
+                                        <p><b>Linkedin:</b> yuman yin</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divider1"></div>
+            <!-- Timeline Education -->
+            <div class="lonon-timeline">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12"> <span class="heading-meta style-1">Resume</span>
+                            <h2 class="lonon-heading animate-box" data-animate-effect="fadeInLeft">Education</h2> </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+                            <div class="timeline lonon-timeline-second-style clearfix">
+                                <div class="lonon-timeline-item clearfix">
+                                    <div class="left-part">
+                                        <h5 class="item-period">2018 - 2021</h5> <span class="item-company">Tours, France</span> </div>
+                                    <div class="divider"></div>
+                                    <div class="right-part">
+                                        <p class="item-title">École d’ingénieurs Polytechnique de l’Université de Tours</p>
+                                        <h5>Master in Computer Science</h5>
+                                        <p>Currently a 4th-year student studying for a Master Degree in Information Technology Engineering</p>
+                                    </div>
+                                </div>
+                                <div class="lonon-timeline-item clearfix">
+                                    <div class="left-part">
+                                        <h5 class="item-period">2014 - 2018</h5> <span class="item-company">Beijing, China</span> </div>
+                                    <div class="divider"></div>
+                                    <div class="right-part">
+                                        <p class="item-title">University of Science and Technology in Beijing</p>
+                                        <h5>Bachelor of Engineering (Major in Internet of Things)</h5>
+                                        <p>Bachelor of Engineering(4-year)</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divider1"></div>
+            <!-- Timeline Experience -->
+            <div class="lonon-timeline">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12"> <span class="heading-meta style-1">Resume</span>
+                            <h2 class="lonon-heading animate-box" data-animate-effect="fadeInLeft">Experience</h2> </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+                            <div class="timeline lonon-timeline-second-style clearfix">
+                                <div class="lonon-timeline-item clearfix">
+                                    <div class="left-part">
+                                        <h5 class="item-period">June - July 2019</h5>
+                                        <span class="item-company">Tours, France</span>
+                                    </div>
+
+                                    <div class="divider"></div>
+                                    <div class="right-part">
+                                        <p class="item-title">Cover 3D France</p>
+                                        <h5>Developer of Web</h5>
+                                        <p>Developer of CMS in website for managing customer information and company document by using Python(Django), HTML, CSS, JavaScript. </p>
+                                    </div>
+                                </div>
+                                <div class="lonon-timeline-item clearfix">
+                                    <div class="left-part">
+                                        <h5 class="item-period">2017 - 2018</h5>
+                                        <span class="item-company">Beijing, China</span>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="right-part">
+                                        <p class="item-title">Beijing Lebo Technology Co., Ltd</p>
+                                        <h5>Administrator of Web</h5>
+                                        <p>Design and edit website content by using PHP, MySQL, HTML. Edit software development documents, software user manuals and patent application materials.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divider1"></div>
+            <!-- Skills -->
+            <div class="lonon-skills">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12"> <span class="heading-meta style-1">Abilities</span>
+                            <h2 class="lonon-heading animate-box" data-animate-effect="fadeInLeft">Technical Skills</h2> </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+                            <div class="timeline lonon-timeline-second-style clearfix">
+                                <div class="lonon-timeline-item clearfix">
+                                    <div class="left-part">
+                                        <h5 class="item-period">Python</h5>
+                                    </div>
+
+                                    <div class="divider"></div>
+                                    <div class="right-part">
+                                        <p>Experience of coding Python in framework of Django for developing a Web Application. School project of programming Video Recognition</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline lonon-timeline-second-style clearfix">
+                                <div class="lonon-timeline-item clearfix">
+                                    <div class="left-part">
+                                        <h5 class="item-period">HTML5 / CSS3 / JavaScript</h5>
+                                    </div>
+
+                                    <div class="divider"></div>
+                                    <div class="right-part">
+                                        <p>Experience of developing a Web Application of CMS and my own website.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline lonon-timeline-second-style clearfix">
+                                <div class="lonon-timeline-item clearfix">
+                                    <div class="left-part">
+                                        <h5 class="item-period">Java</h5>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="right-part">
+                                        <p>Experience of coding a Java application that can record consumption and produce consumer reports. It combines with a MySQL database.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline lonon-timeline-second-style clearfix">
+                                <div class="lonon-timeline-item clearfix">
+                                    <div class="left-part">
+                                        <h5 class="item-period">C / C++</h5>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="right-part">
+                                        <p>C / C ++ coding experience in the school graphic and matrix project, and implementation of a face recognition system in the university's graduation project in China.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline lonon-timeline-second-style clearfix">
+                                <div class="lonon-timeline-item clearfix">
+                                    <div class="left-part">
+                                        <h5 class="item-period">PHP</h5>
+                                    </div>
+
+                                    <div class="divider"></div>
+                                    <div class="right-part">
+                                        <p>Experience of designing an application similar to Twitter by using PHP and MySQL in school project.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline lonon-timeline-second-style clearfix">
+                                <div class="lonon-timeline-item clearfix">
+                                    <div class="left-part">
+                                        <h5 class="item-period">DataBase</h5>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="right-part">
+                                        <p>MySQL, Oracle, MongoDB, SQLite3</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline lonon-timeline-second-style clearfix">
+                                <div class="lonon-timeline-item clearfix">
+                                    <div class="left-part">
+                                        <h5 class="item-period">Office Tools</h5>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="right-part">
+                                        <p>Adobe Photoshop, Adobe Illustrator, Word, Excel, PowerPoint</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="lonon-heading animate-box" data-animate-effect="fadeInLeft">Soft Skills</h2> </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
+                            <h5>Professional</h5>
+                            <p>★&nbsp;Communication</p>
+                            <p>★&nbsp;Leadership</p>
+                            <p>★&nbsp;Teamwork</p>
+                            <p>★&nbsp;Organization</p>
+                            <p>★&nbsp;Decision Making</p>
+                            <p>★&nbsp;Time Management</p>
+                        </div>
+                        <div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
+                            <h5>Personal</h5>
+                            <p>◆&nbsp;Critical Thinking</p>
+                            <p>◆&nbsp;Attention to detail</p>
+                            <p>◆&nbsp;Creativity</p>
+                            <p>◆&nbsp;Dependable</p>
+                            <p>◆&nbsp;Adaptable</p>
+                            <p>◆&nbsp;Flexible</p>
+                        </div>
+                        <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+                            <h5>Languages</h5>
+                            <p class="bar-title">Chinese<span class="percent align-right">Native Language</span></p>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-webdesign start"></div>
+                            </div>
+                            <p class="bar-title">French<span class="percent align-right">Very good daily conversation</span></p>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-photoshop start"></div>
+                            </div>
+                            <p class="bar-title">English<span class="percent align-right">Excellent working knowledge</span></p>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-photoshop start"></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="divider1"></div>
+            <!-- Activities -->
+            <div class="lonon-skills">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12"> <span class="heading-meta style-1">Action</span>
+                            <h2 class="lonon-heading animate-box" data-animate-effect="fadeInLeft">Activities</h2> </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
+                            <div class="lonon-feature animate-box" data-animate-effect="fadeInLeft"style="height: 240px" >
+                                <h6>Google Atelier Numérique</h6>
+                                <p>A 4-day course for entrepreneurship training, digital marketing and analytics, e-commerce, career planning projects.</p>
+                                </div>
+                        </div>
+                        <div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
+
+                            <div class="lonon-feature animate-box" data-animate-effect="fadeInLeft" style="height: 240px" >
+                                <h6>Student Association</h6>
+                                <p>Responsible for a student association and involved in the organization of scientific and technological activities of the university in China.</p>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
+
+                            <div class="lonon-feature animate-box" data-animate-effect="fadeInLeft" style="height: 240px">
+                                <h6>Social Survey</h6>
+                                <p>Investigated the development of young entrepreneurs in China, interviewed 7 young entrepreneurs and completed a 20,000-word survey report.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divider1"></div>
+            <!-- Certificate -->
+            <div class="lonon-skills">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12"> <span class="heading-meta style-1">Honour</span>
+                            <h2 class="lonon-heading animate-box" data-animate-effect="fadeInLeft">Certificates</h2> </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+                            <div class="lonon-quote-card">
+                                <img src="{% static 'images/award2.png' %}" class="lonon-quote-2">
+                                <h5>Certification Google Ateliers Numériques</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+                            <div class="lonon-quote-card">
+                                <img src="{% static 'images/award2.png' %}" class="lonon-quote-2">
+                                <h5>Driving License of the People’s Republic of China</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divider1"></div>
+            <!-- Interests -->
+            <div class="lonon-skills">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12"> <span class="heading-meta style-1">Hobbies</span>
+                            <h2 class="lonon-heading animate-box" data-animate-effect="fadeInLeft">Interests</h2> </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 animate-box" data-animate-effect="fadeInLeft">
+                            <div class="project">
+                                <img src="{% static 'images/interests/yoga.png' %}" class="img-fluid">
+                                <div class="desc">
+                                    <div class="con">
+                                        <h5 style="color: #ffffff">Yoga</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 animate-box" data-animate-effect="fadeInLeft">
+                            <div class="project">
+                                <img src="{% static 'images/interests/dance.png' %}" class="img-fluid">
+                                <div class="desc">
+                                    <div class="con">
+                                        <h5 style="color: #ffffff">Chinese Dance</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 animate-box" data-animate-effect="fadeInLeft">
+                            <div class="project">
+                                <img src="{% static 'images/interests/running.png' %}">
+                                <div class="desc">
+                                    <div class="con">
+                                        <h5 style="color: #ffffff">Running</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 animate-box" data-animate-effect="fadeInLeft">
+                            <div class="project">
+                                <img src="{% static 'images/interests/music.png' %}">
+                                <div class="desc">
+                                    <div class="con">
+                                        <h5 style="color: #ffffff">Music</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 animate-box" data-animate-effect="fadeInLeft">
+                            <div class="project">
+                                <img src="{% static 'images/interests/film.png' %}">
+                                <div class="desc">
+                                    <div class="con">
+                                        <h5 style="color: #ffffff">Film</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 animate-box" data-animate-effect="fadeInLeft">
+                            <div class="project">
+                                <img src="{% static 'images/interests/drawing.png' %}">
+                                <div class="desc">
+                                    <div class="con">
+                                        <h5 style="color: #ffffff">Drawing</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+{% endblock %}
+
+{% block script %}
+
+
+{% endblock script %}

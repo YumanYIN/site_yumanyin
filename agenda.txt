@@ -1,0 +1,6 @@
+---- 2019/10/30 ----
+pip install django-taggit
+pip install pillow
+pip install django-imagekit
+pip install django-ckeditor
+pip install django-mptt

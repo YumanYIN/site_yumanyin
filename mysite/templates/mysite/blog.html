@@ -1,0 +1,125 @@
+﻿<!-- extends表明此页面继承自 base.html 文件 -->
+{% extends "mysite/base.html" %}
+{% load staticfiles %}
+
+{% block mainmenu %}
+    <li ><a href="/index/">Home</a></li>
+    <li><a href="/resume/">Resume</a></li>
+    <li><a href="/projects/">Projects</a></li>
+    <li class="lonon-active"><a href="/blog/">Blog</a></li>
+    <li><a href="/contact/">Contact</a></li>
+{% endblock %}
+
+
+{% block content %}
+        <!-- Main Section -->
+        <div id="lonon-main">
+            <!-- Blog -->
+            <div class="lonon-blog">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12"> <span class="heading-meta style-1">Read</span>
+                            <h2 class="lonon-heading animate-box" data-animate-effect="fadeInLeft">Blog</h2> </div>
+                    </div>
+                    <!-- article list 文章列表 -->
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="blog-entry animate-box" data-animate-effect="fadeInLeft">
+                                {% for article in articles %}
+
+
+                                    <div class="desc">
+                                        <h2><a href="article/{{ article.id }}">
+                                            {{ article.title }}</a>
+                                        </h2>
+                                        <p class="item-title">{{ article.author }} |
+                                            {{ article.c_time|date:'Y-m-d' }} |
+
+                                            {% if article.column %}
+                                                {{ article.column }} |
+                                            {% endif %}
+                                            Views: {{ article.total_views }}
+                                        </p>
+
+
+                                    </div>
+                                    <!-- 标题图 -->
+                                    {% if article.avatar %}
+                                        <a href="article/{{ article.id }}" class="blog-img">
+                                            <img src="{% static 'images/blog/google-together.jpg' %}"
+                                                 alt=""
+                                                 style="max-width:100%; border-radius: 20px"
+                                                 class="img-fluid"
+                                            >
+                                        </a>
+                                    {% endif %}
+                                    <div class="desc">
+                                        <!-- 摘要 -->
+                                        <div>
+                                            <p>
+                                                {{ article.summary }}
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!--Read More-->
+                                    <div align="center" style="margin-bottom: 30px">
+                                        <a href="article/{{ article.id }}">
+                                            <div class="btn btn-outline-primary">Read More</div>
+                                        </a>
+                                    </div>
+
+                                    <div class="divider1"></div>
+                                    <br/>
+
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 页码导航 -->
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <ul class="lonon-pagination-wrap align-center">
+                                <li><a href="#"><i class="ti-arrow-left"></i></a></li>
+                                <!-- 如果不是第一页，则显示上翻按钮 -->
+                                {% if articles.has_previous %}
+
+
+                                    <li><a href="?page={{ articles.previous_page_number }}&order={{ order }}&search={{ search }}&column={{ column }}"
+                                    >
+                                        {{ articles.previous_page_number }}
+                                    </a>
+                                    </li>
+                                {% endif %}
+
+                                <!-- 当前页面 -->
+                                <li><a href="#" class="active">
+                                    {{ articles.number }}</a>
+                                </li>
+
+                                <!-- 如果不是最末页，则显示下翻按钮 -->
+                                {% if articles.has_next %}
+                                    <li><a href="?page={{ articles.next_page_number }}&order={{ order }}&search={{ search }}&column={{ column }}"
+                                    >
+                                        {{ articles.next_page_number }}
+                                    </a>
+                                    </li>
+
+
+                                {% endif %}
+                                <li><a href="#"><i class="ti-arrow-right"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+{% endblock %}
+
+{% block script %}
+
+
+{% endblock script %}

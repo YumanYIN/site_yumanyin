@@ -1,0 +1,94 @@
+﻿<!-- extends表明此页面继承自 base.html 文件 -->
+{% extends "mysite/base.html" %}
+{% load staticfiles %}
+
+{% block mainmenu %}
+    <li class="lonon-active"><a href="index.html">Home</a></li>
+    <li><a href="/resume/">Resume</a></li>
+    <li><a href="/projects/">Projects</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/contact/">Contact</a></li>
+{% endblock %}
+
+
+{% block content %}
+
+        <!-- Main Section -->
+        <div id="lonon-main">
+            <!-- About Me -->
+            <div class="lonon-about">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-5"> <img src="{% static 'images/resume1.jpg' %}" class="img-fluid mb-15 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft" alt=""> </div>
+                        <div class="col-md-7 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft"> <span class="heading-meta style-1">About me</span>
+                            <h3 class="lonon-about-heading">I'm Yuman YIN</h3>
+                            <p>I’m currently a 4th-year student major in Computer Science who is studying for a Master Degree in Information Technology Engineering.</p>
+                            <p>In the summer of 2019, I was fortunate to develop a corporate customer information management system using the Python-based Django framework by self-study during the internship. </p>
+                            <p>Based on this work experience, I have a strong interest in website development.</p>
+                            <p>I hope to be able to perform a 3 months summer internship for 2020 in a dynamic, creative and professional company. </p>
+                            <p>I will provide my creativity to the company while conducting more professional study of website development.</p>
+                            <div class="cardvisit">
+                                <h3>Yuman YIN</h3>
+                                <span>Computer Science</span>
+                                <div class="divider-line"></div>
+                                <p class="info-email" data-name="  &nbsp;yinyuman96" data-domain="gmail" data-tld="com"><i class="ti-email"></i></p>
+                                <p><i class="ti-location-pin"></i> &nbsp;Polytech Tours, 37200, France</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="divider1"></div>
+            <!-- Testiominals -->
+            <div class="lonon-testiominal">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12"> <span class="heading-meta style-1">Say About Us</span>
+                            <h2 class="lonon-heading animate-box" data-animate-effect="fadeInLeft">Testimonials</h2> </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+                            <div class="lonon-quote-card"> <img src="{% static 'images/quote.png' %}" alt="" class="lonon-quote-2">
+                                <p>"Yuman YIN a réalisé un travail de bon qualité. Elle est studieuse et rigoureuse avec un comportement agréable et sérieux. "</p>
+                                <p>"Yuman YIN did a good job. She is studious and rigorous with a pleasant and serious behavior."</p>
+                                <h5><strong>Julien Terrien</strong></h5>
+                                <p class="occupation">Gérant de Cover 3D France</p>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="divider1"></div>
+            <!-- Clients -->
+            <div class="lonon-clients">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12"> <span class="heading-meta style-1">Education</span>
+                            <h2 class="lonon-heading animate-box" data-animate-effect="fadeInLeft">Universities</h2> </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+                            <div class="clients">
+                                <a href="https://polytech.univ-tours.fr/" target="_blank">
+                                    <img src="{% static 'images/schools/PolytechTours.png' %}" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+                            <div class="clients">
+                                 <a href="http://en.ustb.edu.cn/" target="_blank">
+                                    <img src="{% static 'images/schools/min_logo_ustb.png' %}" class="img-fluid" alt="" style="background-color: #005cbf">
+                                 </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            {% block content-footer %}{% endblock %}
+        </div>
+
+{% endblock %}

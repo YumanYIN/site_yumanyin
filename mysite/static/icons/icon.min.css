@@ -1,0 +1,537 @@
+.icon {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin-top:1px;
+
+}
+
+.icon-angularjs {	
+  -webkit-mask: url("angularjs.svg") no-repeat;
+  mask: url("angularjs.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-angularjs:hover {
+  background-color: #bd5d38;
+}
+
+.icon-apache {	
+  -webkit-mask: url("apache.svg") no-repeat;
+  mask: url("apache.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-apache:hover {
+  background-color: #bd5d38;
+}
+
+.icon-bootstrap {	
+  -webkit-mask: url("bootstrap.svg") no-repeat;
+  mask: url("bootstrap.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-bootstrap:hover {
+  background-color: #bd5d38;
+}
+
+.icon-c { 
+  -webkit-mask: url("c.svg") no-repeat;
+  mask: url("c.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-c:hover {
+  background-color: #bd5d38;
+}
+
+.icon-cpp { 
+  -webkit-mask: url("cpp.svg") no-repeat;
+  mask: url("cpp.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-cpp:hover {
+  background-color: #bd5d38;
+}
+
+.icon-csharp { 
+  -webkit-mask: url("csharp.svg") no-repeat;
+  mask: url("csharp.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-csharp:hover {
+  background-color: #bd5d38;
+}
+
+.icon-css3 { 
+  -webkit-mask: url("css3.svg") no-repeat;
+  mask: url("css3.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-css3:hover {
+  background-color: #bd5d38;
+}
+
+.icon-debian { 
+  -webkit-mask: url("debian.svg") no-repeat;
+  mask: url("debian.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-debian:hover {
+  background-color: #bd5d38;
+}
+
+.icon-eclipse { 
+  -webkit-mask: url("eclipse.svg") no-repeat;
+  mask: url("eclipse.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-eclipse:hover {
+  background-color: #bd5d38;
+}
+
+.icon-git { 
+  -webkit-mask: url("git.svg") no-repeat;
+  mask: url("git.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-git:hover {
+  background-color: #bd5d38;
+}
+
+.icon-github { 
+  -webkit-mask: url("github.svg") no-repeat;
+  mask: url("github.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-github:hover {
+  background-color: #bd5d38;
+}
+
+.icon-gitlab { 
+  -webkit-mask: url("gitlab.svg") no-repeat;
+  mask: url("gitlab.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-gitlab:hover {
+  background-color: #bd5d38;
+}
+
+.icon-html5 { 
+  -webkit-mask: url("html5.svg") no-repeat;
+  mask: url("html5.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-html5:hover {
+  background-color: #bd5d38;
+}
+
+.icon-java { 
+  -webkit-mask: url("java.svg") no-repeat;
+  mask: url("java.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-java:hover {
+  background-color: #bd5d38;
+}
+
+.icon-javascript { 
+  -webkit-mask: url("javascript.svg") no-repeat;
+  mask: url("javascript.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-javascript:hover {
+  background-color: #bd5d38;
+}
+
+.icon-jquery { 
+  -webkit-mask: url("jquery.svg") no-repeat;
+  mask: url("jquery.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-jquery:hover {
+  background-color: #bd5d38;
+}
+
+.icon-json { 
+  -webkit-mask: url("json.svg") no-repeat;
+  mask: url("json.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-json:hover {
+  background-color: #bd5d38;
+}
+
+.icon-kaios { 
+  -webkit-mask: url("kaios.svg") no-repeat;
+  mask: url("kaios.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-kaios:hover {
+  background-color: #bd5d38;
+}
+
+.icon-laravel { 
+  -webkit-mask: url("laravel.svg") no-repeat;
+  mask: url("laravel.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-laravel:hover {
+  background-color: #bd5d38;
+}
+
+.icon-linux { 
+  -webkit-mask: url("linux.svg") no-repeat;
+  mask: url("linux.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-linux:hover {
+  background-color: #bd5d38;
+}
+
+.icon-microsoftaccess { 
+  -webkit-mask: url("microsoftaccess.svg") no-repeat;
+  mask: url("microsoftaccess.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-microsoftaccess:hover {
+  background-color: #bd5d38;
+}
+
+.icon-microsoftexcel { 
+  -webkit-mask: url("microsoftexcel.svg") no-repeat;
+  mask: url("microsoftexcel.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-microsoftexcel:hover {
+  background-color: #bd5d38;
+}
+
+.icon-microsoftword { 
+  -webkit-mask: url("microsoftword.svg") no-repeat;
+  mask: url("microsoftword.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-microsoftword:hover {
+  background-color: #bd5d38;
+}
+
+.icon-mysql { 
+  -webkit-mask: url("mysql.svg") no-repeat;
+  mask: url("mysql.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-mysql:hover {
+  background-color: #bd5d38;
+}
+
+.icon-nodejs { 
+  -webkit-mask: url("nodejs.svg") no-repeat;
+  mask: url("nodejs.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-nodejs:hover {
+  background-color: #bd5d38;
+}
+
+.icon-oracle { 
+  -webkit-mask: url("oracle.svg") no-repeat;
+  mask: url("oracle.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-oracle:hover {
+  background-color: #bd5d38;
+}
+
+.icon-ovh { 
+  -webkit-mask: url("ovh.svg") no-repeat;
+  mask: url("ovh.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-ovh:hover {
+  background-color: #bd5d38;
+}
+
+.icon-photoshop { 
+  -webkit-mask: url("photoshop.svg") no-repeat;
+  mask: url("photoshop.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-photoshop:hover {
+  background-color: #bd5d38;
+}
+
+.icon-php { 
+  -webkit-mask: url("php.svg") no-repeat;
+  mask: url("php.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-php:hover {
+  background-color: #bd5d38;
+}
+
+.icon-postgresql { 
+  -webkit-mask: url("postgresql.svg") no-repeat;
+  mask: url("postgresql.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-postgresql:hover {
+  background-color: #bd5d38;
+}
+
+.icon-python { 
+  -webkit-mask: url("python.svg") no-repeat;
+  mask: url("python.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-python:hover {
+  background-color: #bd5d38;
+}
+
+.icon-raspberrypi { 
+  -webkit-mask: url("raspberrypi.svg") no-repeat;
+  mask: url("raspberrypi.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-raspberrypi:hover {
+  background-color: #bd5d38;
+}
+
+.icon-rootme { 
+  -webkit-mask: url("rootme.svg") no-repeat;
+  mask: url("rootme.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-rootme:hover {
+  background-color: #bd5d38;
+}
+
+.icon-simpleicons { 
+  -webkit-mask: url("simpleicons.svg") no-repeat;
+  mask: url("simpleicons.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-simpleicons:hover {
+  background-color: #bd5d38;
+}
+
+.icon-stackoverflow { 
+  -webkit-mask: url("stackoverflow.svg") no-repeat;
+  mask: url("stackoverflow.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-stackoverflow:hover {
+  background-color: #bd5d38;
+}
+
+.icon-sublimetext { 
+  -webkit-mask: url("sublimetext.svg") no-repeat;
+  mask: url("sublimetext.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-sublimetext:hover {
+  background-color: #bd5d38;
+}
+
+.icon-trello { 
+  -webkit-mask: url("trello.svg") no-repeat;
+  mask: url("trello.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-trello:hover {
+  background-color: #bd5d38;
+}
+
+.icon-ubuntu { 
+  -webkit-mask: url("ubuntu.svg") no-repeat;
+  mask: url("ubuntu.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-ubuntu:hover {
+  background-color: #bd5d38;
+}
+
+.icon-visualstudio { 
+  -webkit-mask: url("visualstudio.svg") no-repeat;
+  mask: url("visualstudio.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-visualstudio:hover {
+  background-color: #bd5d38;
+}
+
+.icon-visualstudiocode { 
+  -webkit-mask: url("visualstudiocode.svg") no-repeat;
+  mask: url("visualstudiocode.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-visualstudiocode:hover {
+  background-color: #bd5d38;
+}
+
+.icon-windows { 
+  -webkit-mask: url("windows.svg") no-repeat;
+  mask: url("windows.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-windows:hover {
+  background-color: #bd5d38;
+}
+
+.icon-wordpress { 
+  -webkit-mask: url("wordpress.svg") no-repeat;
+  mask: url("wordpress.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-wordpress:hover {
+  background-color: #bd5d38;
+}
+
+.icon-tomcat { 
+  -webkit-mask: url("tomcat.svg") no-repeat;
+  mask: url("tomcat.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-tomcat:hover {
+  background-color: #bd5d38;
+}
+
+.icon-sublimetext { 
+  -webkit-mask: url("sublimetext.svg") no-repeat;
+  mask: url("sublimetext.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-sublimetext:hover {
+  background-color: #bd5d38;
+}
+
+.icon-springboot { 
+  -webkit-mask: url("springboot.svg") no-repeat;
+  mask: url("springboot.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-springboot:hover {
+  background-color: #bd5d38;
+}
+
+.icon-maven { 
+  -webkit-mask: url("maven.svg") no-repeat;
+  mask: url("maven.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-maven:hover {
+  background-color: #bd5d38;
+}
+
+.icon-kali { 
+  -webkit-mask: url("kali.svg") no-repeat;
+  mask: url("kali.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-kali:hover {
+  background-color: #bd5d38;
+}
+
+.icon-juce { 
+  -webkit-mask: url("juce.svg") no-repeat;
+  mask: url("juce.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-juce:hover {
+  background-color: #bd5d38;
+}
+
+.icon-cordova { 
+  -webkit-mask: url("cordova.svg") no-repeat;
+  mask: url("cordova.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-cordova:hover {
+  background-color: #bd5d38;
+}
+
+.icon-typescript { 
+  -webkit-mask: url("typescript.svg") no-repeat;
+  mask: url("typescript.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-typescript:hover {
+  background-color: #bd5d38;
+}
+
+.icon-bitbucket { 
+  -webkit-mask: url("bitbucket.svg") no-repeat;
+  mask: url("bitbucket.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-bitbucket:hover {
+  background-color: #bd5d38;
+}
+
+.icon-roundcube { 
+  -webkit-mask: url("roundcube.svg") no-repeat;
+  mask: url("roundcube.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-roundcube:hover {
+  background-color: #bd5d38;
+}
+
+.icon-devicon { 
+  -webkit-mask: url("devicon.svg") no-repeat;
+  mask: url("devicon.svg") no-repeat;
+  background-color: #868e96;
+}
+
+.icon-devicon:hover {
+  background-color: #bd5d38;
+}
